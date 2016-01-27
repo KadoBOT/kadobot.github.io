@@ -24,7 +24,7 @@
 
   <div class="ui grid">
     <div class="ui fixed bound bottom sticky">
-      <a href="#s1"><i class="huge orange arrow circle down icon"></i></a>
+      <a href="#s1"><i class="huge arrow circle down icon" style="color: white !important"></i></a>
     </div>
   </div>
   <div class="overlay">
@@ -41,7 +41,7 @@
         <em>"Choose a job you love, and you will never have to work a day in your life." - Confucius</em>
         <br/>
         <br/>
-        <p class="textleft">Kado is a mutant who uses his JS powers to create awesome web apps and unlike other mutants like him, he doesn't like coffee. He is constantly improving his skills, by learning new powers and/or practicing the ones he already have. Currently,
+        <p class="textleft">Kado is someone who uses his JS powers to create awesome web apps and unlike other like him, he doesn't like coffee. He is constantly improving his skills, by learning new powers and/or practicing the ones he already have. Currently,
           Kado have no affiliations. Some say, that he have a dream of joining an affiliation in US or EU.</p>
 
       </div>
@@ -74,16 +74,26 @@
       </div>
 
     </div>
+
+    <div class="ui grid" style="
+        text-align: right;
+        float: right;
+    ">
+      <div style="width: 98px !important; height: 56px !important;">
+        <a href="#s2"><i class="huge orange arrow circle down icon looping animating transition bounce" style="animation-duration: 2000ms;"></i></a>
+      </div>
+    </div>
   </div>
   <div class="bg2"></div>
-  <div class="section-two">
+  <div id="s2"  class="section-two">
     <div class="two">
       <h1>Interesting Facts</h1>
       <div class="ui divider"></div>
       <div class="ui statistics putmid">
         <div class="statistic">
           <div class="value">
-            <i class="code icon"></i><div id="code">48789</div>
+            <i class="code icon"></i>
+            <div id="code">48789</div>
           </div>
           <div class="label">
             Lines of Code Written
@@ -125,11 +135,19 @@
           15 years
         </div>
       </div>
-    </div>
 
+    </div>
+    <div class="ui grid" style="
+        text-align: right;
+        float: left;
+    ">
+      <div style="width: 98px !important; height: 56px !important;">
+        <a href="#s3"><i class="huge arrow circle down icon looping animating transition bounce" style="animation-duration: 2000ms; color: white"></i></a>
+      </div>
+    </div>
   </div>
   <div class="bg3"></div>
-  <div class="section-three">
+  <div id="s3" class="section-three">
     <div class="three">
       <h1>Power Grid</h1>
       <div class="list-h">
@@ -343,39 +361,85 @@
             </div>
           </div>
           <div class="item">
-            <div class="description skills" >...and&nbsp;<div id="skills">Adobe PhotoShop</div>!!!</div>
+            <div class="description skills">...and&nbsp;
+              <div id="skills">Adobe PhotoShop</div>!!!</div>
           </div>
 
         </div>
 
       </div>
+    </div>
+    <div class="ui grid" style="
+        text-align: right;
+        float: right;
+    ">
+      <div style="width: 98px !important; height: 56px !important;">
+        <a href="#s5"><i class="huge orange arrow circle down icon looping animating transition bounce" style="animation-duration: 2000ms;"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg4"></div>
+  <div id="s5" class="section-four">
+    <div class="four">
+      <h1>Contact</h1>
+      <div class="ui divider"></div>
+      <div class="ui horizontal list text-center">
+        <div class="item">
+          <h2 class="ui header">
+            <i class="large icons">
+              <i class="circular inverted twitter icon"></i>
+              <i class="corner add icon"></i>
+            </i>
+            <a href="https://twitter.com/KadoBOT" target="_blank" style="color: white">@KadoBOT on Twitter</a>
+          </h2>
+        </div>
+        <div class="item">
+          <h2 class="ui header">
+            <i class="large icons">
+              <i class="circular inverted linkedin icon"></i>
+              <i class="corner add icon"></i>
+            </i>
+            <a href="https://br.linkedin.com/in/rambrogi" target="_blank" style="color: white">rambrogi on Linkedin</a>
+          </h2>
+        </div>
+        <div class="item">
+          <h2 class="ui header">
+            <i class="large icons">
+              <i class="circular inverted mail icon"></i>
+            </i>
+            <a href="mailto:ricardo.ambrogi@gmail.com" target="_blank" style="color: white">ricardo.ambrogi@gmail.com</a>
+          </h2>
+        </div>
+      </div>
 
     </div>
-    <script type="text/javascript">
-      var i = 48790;
-      var z = 0;
-      var skills = ['Adobe Photoshop', 'jQuery', 'Koa', 'Drinking Beer', 'WordPress', 'SEO', 'eCommerce', 'Eating Pizza', 'Semantic UI', 'Material Design']
-      $('.ui.sticky')
-        .sticky({
-          context: '.grid'
-        });
-      $('.circle.down.icon')
-        .transition('set looping')
-        .transition('bounce', '2000ms');
-      setInterval(function() {
-        document.getElementById("code").innerHTML = i;
-        $('#code')
-          .transition('pulse');
-        i++;
-      }, 5000);
-      setInterval(function() {
-        document.getElementById("skills").innerHTML = skills[z];
-        $('#skills')
-          .transition('jiggle');
-        z++;
-        if (z == skills.length) z = 0;
-      }, 2000);
-    </script>
+  </div>
+  <script type="text/javascript">
+    var i = 48790;
+    var z = 0;
+    var skills = ['Adobe Photoshop', 'jQuery', 'Koa', 'Drinking Beer', 'WordPress', 'SEO', 'eCommerce', 'Eating Pizza', 'Semantic UI', 'Material Design']
+    $('.ui.sticky')
+      .sticky({
+        context: '.grid'
+      });
+    $('.circle.down.icon')
+      .transition('set looping')
+      .transition('bounce', '2000ms');
+    setInterval(function() {
+      document.getElementById("code").innerHTML = i;
+      $('#code')
+        .transition('pulse');
+      i++;
+    }, 5000);
+    setInterval(function() {
+      document.getElementById("skills").innerHTML = skills[z];
+      $('#skills')
+        .transition('jiggle');
+      z++;
+      if (z == skills.length) z = 0;
+    }, 2000);
+  </script>
 </body>
 
 </html>

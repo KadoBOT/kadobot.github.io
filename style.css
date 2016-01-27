@@ -55,7 +55,7 @@ div#code {
   height: 400px;
   z-index: 100;
   margin-top: -35px;
-  transform: skewY(3deg);
+  transform: skewY(2deg);
   -webkit-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);
@@ -73,6 +73,18 @@ div#code {
   box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);
   padding-top: 50px;
 }
+.section-four {
+  width: 100%;
+  background-color: #FF4700;
+  height: 365px;
+  z-index: 100;
+  margin-top: -55px;
+  transform: skewY(1deg);
+  -webkit-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);
+  padding-top: 50px;
+}
 .textleft {
   text-align: justify;
 }
@@ -82,8 +94,8 @@ div#code {
   width: 940px;
   margin: auto;
 }
-.two {
-  transform: skewY(-3deg);
+.two, .four{
+  transform: skewY(-2deg);
   height: 300px;
   width: 940px;
   margin: auto;
@@ -164,12 +176,24 @@ div#code {
   border-radius: 4px;
   border: 1px solid rgba(0, 0, 0, .4);
 }
-.two h1 {
+.two h1, .four h1{
   font-size: 48px;
   color: white;
   text-align: center
 }
-h2 {}
+.circular.inverted.twitter.icon, .circular.inverted.linkedin.icon, .circular.inverted.mail.icon{
+	color: #FF4700 !important;
+	background-color: white !important;
+}
+.corner.add.icon{
+	color: #FF4700;
+}
+.text-center{
+	text-align: center;
+}
+h2.ui.header {
+    color: white !important;
+}
 .one img {
   float: left;
   /* border-radius: 10px; */
@@ -217,6 +241,13 @@ h2 {}
   background-attachment: fixed;
   background-size: cover;
   height: 400px;
+}
+.bg4{
+	background: url('assets/img/618711.png');
+  margin-top: -63px !important;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 600px;
 }
 .about {
   width: 495px;
