@@ -1,5 +1,5 @@
 body{
-	background: url('http://images7.alphacoders.com/398/398392.jpg') !important;
+	background: url('assets/img/398392.jpg') !important;
 	background-size: cover !important;
 	background-attachment: fixed !important;	
 	font-family: 'Montserrat Alternates', sans-serif;
@@ -199,7 +199,7 @@ h2{
 }
 
 .bg2{
-	background: url('http://images8.alphacoders.com/398/398391.jpg');
+	background: url('assets/img/398391.jpg');
 	margin-top: -63px !important;
     background-attachment: fixed;
     background-size: cover;
@@ -207,7 +207,7 @@ h2{
 }
 
 .bg3{
-	background: url('http://comicsalliance.com/files/2014/05/xmen10.jpg');	
+	background: url('assets/img//xmen10.jpg');	
 	margin-top: -63px !important;
     background-attachment: fixed;
     background-size: cover;
