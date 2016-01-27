@@ -192,7 +192,7 @@ h2{
 }
 
 .info{
-	    width: 283px;
+	    width: 200px;
     /* float: right; */
     display: inline-block;
     margin-left: 10px;
@@ -214,7 +214,7 @@ h2{
     height: 400px;
 }
 .about{
-	width: 400px;
+	width: 495px;
     height: 225px;
     border-left: 1px solid #FF4700;
     border-right: 1px solid #FF4700;
