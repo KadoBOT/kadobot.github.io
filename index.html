@@ -28,17 +28,98 @@
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/transition.min.js"></script>
+  <script>
+    (function($) {
 
+      /**
+       * Copyright 2012, Digital Fusion
+       * Licensed under the MIT license.
+       * http://teamdf.com/jquery-plugins/license/
+       *
+       * @author Sam Sehnert
+       * @desc A small plugin that checks whether elements are within
+       *     the user visible viewport of a web browser.
+       *     only accounts for vertical position, not horizontal.
+       */
+
+      $.fn.visible = function(partial) {
+
+          var $t            = $(this),
+              $w            = $(window),
+              viewTop       = $w.scrollTop(),
+              viewBottom    = viewTop + $w.height(),
+              _top          = $t.offset().top,
+              _bottom       = _top + $t.height(),
+              compareTop    = partial === true ? _bottom : _top,
+              compareBottom = partial === true ? _top : _bottom;
+
+        return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+      };
+
+      })(jQuery);
+  </script>
+  <script>
+    var done = 1;
+    $(window).scroll(function(event) {
+
+      $(".bg2").each(function(i, el) {
+        var el = $(el);
+        if (el.visible(true) && done) {
+          $('.one')
+            .transition('show')
+            .transition('tada')
+            done = 0;
+          ;
+        }
+      });
+
+    });
+  </script>
+  <script>
+    var done1 = 1;
+    $(window).scroll(function(event) {
+
+      $(".bg3").each(function(i, el) {
+        var el = $(el);
+        if (el.visible(true) && done1) {
+          $('.two')
+            .transition('show')
+            .transition('tada')
+            done1 = 0;
+          ;
+        }
+      });
+
+    });
+  </script>
+  <script>
+    var done2 = 1;
+    $(window).scroll(function(event) {
+
+      $(".bg4").each(function(i, el) {
+        var el = $(el);
+        if (el.visible(true) && done2) {
+          $('.three')
+            .transition('show')
+            .transition('tada')
+            done2 = 0;
+          ;
+        }
+      });
+
+    });
+  </script>
   <div class="ui grid">
     <div class="ui fixed bound bottom sticky">
       <a href="#s1"><i class="huge arrow circle down icon" style="color: white !important"></i></a>
     </div>
   </div>
-  <div id="s0" class="overlay">
+  <div id="s0" class="overlay" sty>
     <h1>Ricardo Ambrogi</h1>
   </div>
   <div id="s1" class="section-one">
-    <div class="one">
+    <div class="one transition hidden">
       <h1>Character Bio</h1>
       <div>
         <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAYcAAAAJGFiM2U2MzNiLTUwYjUtNDdmNS05MDMwLWM0NGNjODA5YjY2Yw.jpg">
@@ -84,7 +165,7 @@
   </div>
   <div class="bg2"></div>
   <div id="s2" class="section-two">
-    <div class="two">
+    <div class="two transition hidden">
       <h1>Interesting Facts</h1>
       <div class="ui divider"></div>
       <div class="ui statistics putmid">
@@ -138,7 +219,7 @@
   </div>
   <div class="bg3"></div>
   <div id="s3" class="section-three">
-    <div class="three">
+    <div class="three transition hidden">
       <h1>Power Grid</h1>
       <div class="list-h">
         <div class="ui list">
@@ -422,6 +503,7 @@
       z++;
       if (z == skills.length) z = 0;
     }, 2000);
+
   </script>
 </body>
 
