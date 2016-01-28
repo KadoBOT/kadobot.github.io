@@ -66,7 +66,7 @@ div#code {
   background-color: white;
   height: 400px;
   z-index: 100;
-  margin-top: -35px;
+  margin-top: -50px;
   transform: skewY(-3deg);
   -webkit-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);
@@ -89,7 +89,7 @@ div#code {
   text-align: justify;
 }
 .one, .three {
-  transform: skewY(3deg);
+  transform: translateZ(0) skewY(3deg);
   height: 300px;
   width: 940px;
   margin: auto;
@@ -236,14 +236,14 @@ h2.ui.header {
   height: 400px;
 }
 .bg3 {
-  background: url('assets/img//xmen10.jpg');
+  background: url('assets/img/523844.jpg');
   margin-top: -63px !important;
   background-attachment: fixed;
   background-size: cover;
   height: 400px;
 }
 .bg4{
-	background: url('assets/img/7091.jpg');
+	background: url('assets/img//xmen10.jpg');
   margin-top: -63px !important;
   background-attachment: fixed;
   background-size: cover;
