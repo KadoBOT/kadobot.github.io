@@ -1,0 +1,55 @@
+*{
+  font-family: 'Titillium Web', fantasy;
+
+  font-size: 12px;
+}
+.title{
+  font-size: 48px;
+  font-family: Montserrat, sans-serif;
+  line-height: 10px;
+}
+.subtitle{
+  font-size: 24px;
+  line-height: 10px;
+}
+.header{
+  background-color: #f6f6f6;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+td {
+    padding-right: 15px;
+    font-size: 12px;
+}
+.td-main{
+  font-weight: 600;
+}
+.heading{
+  padding: 12px;
+  background-color: whitesmoke;
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 5px;
+  border-bottom: 1px solid orangered;
+}
+.box{
+  font-size: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.orange{
+  color: orangered;
+}
+.headline{
+  font-size: 13px;
+  font-weight: 600;
+}
+.date{
+  padding: 2px 15px 2px 15px;
+  background-color: orangered;
+  margin-left: 25px;
+  border-radius: 5px;
+}
+.other{
+  font-size: 10px
+}
