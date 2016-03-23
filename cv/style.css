@@ -3,6 +3,14 @@
 
   font-size: 12px;
 }
+body{
+  width: 854px !important;
+}
+.box-shadow{
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.25);
+  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.25);
+}
 .title{
   font-size: 48px;
   font-family: Montserrat, sans-serif;
