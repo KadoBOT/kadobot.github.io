@@ -15,6 +15,12 @@ h1, h2 {
   font-family: 'Montserrat Alternates', sans-serif;
   color: #FF4700;
 }
+
+a{
+    color: #FF4700 !important;
+    font-weight: 600;
+}
+
 .overlay h1 {
   margin: auto;
   text-transform: uppercase;
@@ -195,14 +201,13 @@ h2.ui.header {
     color: white !important;
 }
 .one img {
-  float: left;
-  /* border-radius: 10px; */
-  height: 225px;
-  margin-right: 10px;
-  -webkit-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.45);
-  -moz-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.45);
-  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.45);
-  border-radius: 15px;
+    float: left;
+    /* border-radius: 10px; */
+    height: 290px;
+    position: absolute;
+    /* margin-right: 10px; */
+    top: 30px;
+    left: -10px;
 }
 .two .ui.statistics .statistic .value {
   color: white;
@@ -250,12 +255,13 @@ h2.ui.header {
   height: 600px;
 }
 .about {
-  width: 495px;
-  height: 225px;
-  border-left: 1px solid #FF4700;
-  border-right: 1px solid #FF4700;
-  float: left;
-  padding: 0px 20px 0px 20px;
+    width: 495px;
+    height: 225px;
+    border-left: 1px solid #FF4700;
+    border-right: 1px solid #FF4700;
+    float: left;
+    padding: 0px 20px 0px 20px;
+    margin-left: 235px;
 }
 .about em, .info p strong {
   color: #FF4700;
