@@ -5,6 +5,8 @@
 }
 body{
   width: 854px !important;
+  border-top: 20px solid rgb(83, 109, 217);
+
 }
 
 .pagebreak { page-break-before: always; }
@@ -18,16 +20,30 @@ body{
   font-size: 48px;
   font-family: Montserrat, sans-serif;
   line-height: 10px;
+  margin-left: 10px;
 }
 .subtitle{
   font-size: 24px;
   line-height: 10px;
+  margin-left: 10px;
 }
-.header{
-  background-color: #f6f6f6;
-  padding-top: 20px;
-  padding-bottom: 20px;
+
+table {
+  margin-left: 10px;
 }
+
+.content {
+  border-bottom: 20px solid #536dd9;
+}
+
+.pure-u-7-24{
+  background: rgba(206, 206, 255, 0.31);
+}
+
+.sidebar {
+  height: 1020px;
+}
+
 td {
     padding-right: 15px;
     font-size: 12px;
@@ -36,20 +52,53 @@ td {
   font-weight: 600;
 }
 .heading{
+  margin-top: 0px;
   padding: 12px;
-  background-color: whitesmoke;
   font-size: 20px;
   font-weight: 600;
-  margin-right: 5px;
-  border-bottom: 1px solid orangered;
+  margin-right: 0px;
+  border-bottom: 1px dashed rgb(83, 109, 217);
 }
+
+.call-me {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.title-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.call-me > div {
+  width: 140px;
+  height: 140px;
+  position: relative;
+  margin-bottom: -140px;
+  border-radius: 100%;
+  background: rgba(171, 171, 245, 0.35);
+  z-index: 99;
+}
+
+.call-me > img {
+  width: 140px;
+  border-radius: 100%;
+  filter: grayscale(100%);
+  opacity: 0.8;
+}
+
 .box{
   font-size: 14px;
   padding-left: 20px;
   padding-right: 20px;
 }
 .orange{
-  color: orangered;
+  color: rgb(83, 109, 217);
 }
 .headline{
   font-size: 13px;
@@ -57,7 +106,7 @@ td {
 }
 .date{
   padding: 2px 15px 2px 15px;
-  background-color: orangered;
+  background-color: rgb(83, 109, 217);
   margin-left: 25px;
   border-radius: 5px;
 }
